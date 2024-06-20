@@ -27,3 +27,55 @@ With this personal and professional appreciation for commodities, particularly a
 4. Using PCA and KMeans Clustering, what are the key traits that characterize the top three agricultural commodities, defined by the highest trade volumes, between 2000 and 2022?
 
 5. Earth’s most valuable crop: How can US agricultural purchasers leverage opportunity cost methodology to identify arbitrage opportunities in the global trade of corn (maize) by analyzing the largest exporters and importers among G7 and BRICS nations?
+
+
+## Data &#x1F5C3;
+
+The data that I will be working with is from the Food and Agriculture Association of the United Nations which contains information on all global trade relationships pertaining to agricultural crops, livestock, or other consumable products and is updated very regularly.
+
+The data can be shaped to develop a comprehensive trade matrix and thus contains information on the following variables:
+
+· Domain Code: ‘TM’ — Indicates the domain of the data (Trade Matrix).
+
+· Domain: ‘Detailed trade matrix’ — Describes the type of data.
+
+· Reporter Country Code (M49): Numerical codes representing reporting countries.
+
+· Reporter Countries: Names of reporting countries (e.g., Argentina, Australia).
+
+· Partner Country Code (M49): Numerical codes representing partner countries.
+
+· Partner Countries: Names of partner countries (e.g., Argentina, Australia).
+
+· Element Code: Numerical codes for different elements (e.g., 5610 for Import Quantity).
+
+· Element: Types of trade data (e.g., Import Quantity, Export Value).
+
+· Item Code (CPC): Numerical codes for different items (e.g., 115 for Barley).
+
+· Item: Names of items (e.g., Barley, Maize).
+
+· Year Code: Numerical codes representing the years.
+
+· Year: The specific years of the data.
+
+· Unit: Units of measurement (e.g., t for metric tons, 1000 USD for values).
+
+· Value: The actual data values (e.g., import/export quantities or values).
+
+· Flag: Codes indicating the source or type of data (e.g., ‘X’, ‘A’, ‘I’).
+
+· Flag Description: Descriptions of the flags (e.g., Official figure, Imputed value).
+
+Note that the data was obtained from a first-degree source, and thus was already quite clean with the acceptation of a few null or empty values scattered throughout. As these anomalies were often less than 1/50th of the data, they could be dropped or derived via a mean or linear interpolation without leading to influential outliers, skewed data, or misleading results.
+
+Supporting datasets were also drawn from FRED (the Saint Lewis Federal Reserve) to pull in inflationary and VIX figures (to adjust nominal metrics to real and gauge global market fear and volatility in relation to agricultural commodity volumes and prices).
+
+
+## Tech Stack: Libraries &#x1F4F6;
+* Numpy: used for statistical data manipulation
+* Pandas: used for statistical data manipulation
+* Matplot: used for visualizations
+* Seaborn: used for visualizations
+* Scripy: used for mathematic application - harmonic mean
+* sklearn: used for PCA and KMeans analysis
