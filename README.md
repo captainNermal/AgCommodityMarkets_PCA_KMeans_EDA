@@ -1,5 +1,10 @@
 # AgCommodityMarketsTrade_PCA_KMeans_EDA
 ##### Joshua Smith 
+
+<p align="center">
+  <b> Check this out on medium: https://medium.com/@joshsmith118/agricultural-commodity-markets-an-introduction-to-g7-brics-trade-dad633b27960 </b>
+</p>
+
 ## Project Description & Why This Project &#x1F4D3;
 
 One of the oldest and most enduring mediums of exchange, even predating the Neolithic period (~10,000–3,000 BCE), was physical assets or tangible goods; whether that be livestock, consumables such as wheat or barley, or even salt or other precious refined minerals.
